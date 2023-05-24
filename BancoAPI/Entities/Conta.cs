@@ -5,10 +5,10 @@ namespace BancoAPI.Entities
     {
         public int Id { get; set; }
         public string Nome { get; set; }
-        public int Saldo { get; set; }
+        public double Saldo { get; set; }
         public bool IsDeleted { get; set; }
 
-        public void Update(int saldo)
+        public void Update(double saldo)
         {
             Saldo = saldo;
         }
